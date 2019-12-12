@@ -1,0 +1,25 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int a, b, max;
+    cin>>a>>b;
+    max=a;
+    if (a!=b)
+    {
+       if (b>max)
+       {
+           a=b;
+       }else
+       {
+           b=a;
+       }
+    } else
+    {
+        a=0;
+        b=0;
+    }
+    cout<<a<<endl<<b;
+    return 0;
+}
