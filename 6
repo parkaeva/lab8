@@ -1,0 +1,27 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int x;
+    cin>>x;
+    setlocale(LC_ALL, " ");
+    if (x%2==0)
+    {
+        cout<<"четное"<<" ";
+    } else 
+    {
+        cout<<"нечетное"<<" ";
+    }
+    if (x>0 && x<10)
+    {
+        cout<<"однозначное число";
+    } else if(x>=10 && x<=99)
+    {
+        cout<<"двузначное число";
+    } else if(x>99 && x<1000)
+    {
+        cout<<"трёхзначное число";
+    }
+    return 0;
+}
